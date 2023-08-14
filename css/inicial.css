@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bricolage+Grotesque:opsz,wght@10..48,600&family=Inter:wght@100;200;300;400;500;600&family=Roboto:wght@300;400&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  background: url(../img/background.jpg);
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+.logo img {
+  border-radius: 49%;
+  height: auto;
+  width: 100px;
+}
+
+.header {
+  background: #1d1e29;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 11px;
+  box-shadow: 0 0 30px;
+}
+
+.menu {
+  list-style: none;
+  padding: 0;
+  user-select: none;
+}
+
+.menu li {
+  margin-left: 10px;
+}
+
+.menu li a {
+  display: block;
+  padding: 10px;
+  transition: all 0.2s;
+}
+
+.menu li a:hover {
+  color: blue;
+  transition: all 0.2s;
+}
+
+i#burguer {
+  background-color: rgb(0, 0, 0);
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+i#burguer:hover {
+  background-color: white;
+  color: black;
+}
+
+.fixar-rodape {
+  bottom: 0;
+  position: fixed;
+  width: 100%;
+  color: black;
+  font-weight: 600;
+  text-align: center;
+}
+
+.dropdown-menu {
+  position: absolute;
+  /* fica abaixo do item que voce quer alterar */
+  background-color: #1d1e29;
+  display: none; /* nao exibira o menu de baixo do item */
+}
+
+.dropdown-menu a {
+  display: block;
+  /* exibe o menu na vertical */
+}
+
+.dropdown:hover .dropdown-menu {
+  /* fara uma ação quando passar o mouse em cima do dropdown, a açao sera feita no dropdownmenu */
+  display: block;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-menu a:hover {
+  box-shadow: 0 0 2px white;
+}
+
+.container {
+  margin-top: 40px;
+}
+
+.container-video {
+  border-radius: 20px;
+  box-shadow: 0 0 20px black;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+
+.container-video p {
+  margin: 10px;
+  text-align: center;
+}
+
+.container-video h2 {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+  font-weight: 800;
+  text-decoration: underline;
+}
+
+.container-video video {
+  margin: 50px;
+  height: 500px;
+  width: auto;
+}
